@@ -1,0 +1,60 @@
+<!-- This is the html for a simple budgeting website -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Budget Master</title>
+  <style>
+    .displayFlex {
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+
+    }
+
+    div {
+      padding-left: 2em;
+    }
+
+    h1,
+    #totalDisp,
+    #Savings {
+      text-align: center;
+
+    }
+
+    #addtoSave {
+      padding: 0.2em;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Budget Master</h1>
+  <div class="displayFlex">
+
+    <div>
+      <h2>Incomes in GBP:</h2>
+      <ul id="income"></ul>
+      <h3>Total Income : £<span id="totalIncome"></span></h3>
+      <button id="addNewIncome" value="addNewIncome">Add new Income</button>
+    </div>
+    <div>
+      <h2>Expenses in GBP:</h2>
+      <ul id="expense"></ul>
+      <h3>Total Expenses : £<span id="totalExpense"></span></h3>
+      <button id="addNewExpense" value="addNewExpense">Add new Expense</button>
+
+    </div>
+  </div>
+  <h2 id="totalDisp">Total Disposable income : £<span id="dispIncome"></span> <button id="addtoSave">Add to
+      Savings</button></h2>
+  <h2 id="Savings">Savings : £<span id="totalSavings"></span></h3>
+
+
+    <script src="./main.js" type="text/javascript"></script>
+</body>
+
+</html>
